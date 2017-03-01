@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             xmlns:local="clr-namespace:SfChartSample;;assembly=SfChartSample"
+             x:Class="SfChartSample.StackedColumn100"
+             Title = "100% Stacked Column chart">
+
+  <chart:SfChart x:Name="sfchart">
+    <chart:SfChart.Title>
+      <chart:ChartTitle Text= "Industrial Production Growth"/>
+    </chart:SfChart.Title>
+
+    <chart:SfChart.PrimaryAxis >
+      <chart:CategoryAxis>
+        <chart:CategoryAxis.Title>
+          <chart:ChartAxisTitle Text="Year"/>
+        </chart:CategoryAxis.Title>
+      </chart:CategoryAxis>
+    </chart:SfChart.PrimaryAxis>
+
+    <chart:SfChart.SecondaryAxis>
+      <chart:NumericalAxis>
+        <chart:NumericalAxis.Title>
+          <chart:ChartAxisTitle Text="Production(%)"/>
+        </chart:NumericalAxis.Title>
+      </chart:NumericalAxis>
+    </chart:SfChart.SecondaryAxis>
+
+    <chart:SfChart.Series>
+      <chart:StackingColumn100Series x:Name="series1" Label="US" XBindingPath="Year" YBindingPath="Production" EnableTooltip ="true"/>
+      <chart:StackingColumn100Series x:Name="series2" Label="India" XBindingPath="Year" YBindingPath="Production" EnableTooltip ="true"/>
+      <chart:StackingColumn100Series x:Name="series3" Label="China" XBindingPath="Year" YBindingPath="Production" EnableTooltip ="true"/>
+      <chart:StackingColumn100Series x:Name="series4" Label="Canada" XBindingPath="Year" YBindingPath="Production" EnableTooltip ="true"/>
+    </chart:SfChart.Series>
+
+    <chart:SfChart.Legend>
+      <chart:ChartLegend ToggleSeriesVisibility="True" DockPosition="Bottom"/>
+    </chart:SfChart.Legend>
+
+  </chart:SfChart>
+</ContentPage>

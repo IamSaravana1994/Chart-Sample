@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             xmlns:local="clr-namespace:SfChartSample;;assembly=SfChartSample"
+             x:Class="SfChartSample.Pyramid"
+             Title = "Pyramid">
+
+   <chart:SfChart x:Name="sfchart">
+    <chart:SfChart.Title>
+      <chart:ChartTitle Text= "Weather Report"/>
+    </chart:SfChart.Title>
+   
+    <chart:SfChart.Series>
+      <chart:PyramidSeries x:Name="series1"
+                           XBindingPath = "Month"
+                           YBindingPath = "Temperature">
+        <chart:PyramidSeries.DataMarker>
+          <chart:ChartDataMarker ShowLabel="True">
+            <chart:ChartDataMarker.LabelStyle>
+              <chart:DataMarkerLabelStyle  BackgroundColor="Transparent"/>
+            </chart:ChartDataMarker.LabelStyle>
+          </chart:ChartDataMarker>
+        </chart:PyramidSeries.DataMarker>
+      
+      </chart:PyramidSeries>
+    </chart:SfChart.Series>
+
+     <chart:SfChart.Legend>
+       <chart:ChartLegend/>
+     </chart:SfChart.Legend>
+
+   </chart:SfChart>
+</ContentPage>
