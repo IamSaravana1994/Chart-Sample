@@ -122,18 +122,6 @@
       <HintPath>..\..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.2\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.SfChart.iOS, Version=14.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Syncfusion.Xamarin.SfChart.14.4.0.20\lib\Xamarin.iOS10\Syncfusion.SfChart.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.SfChart.XForms, Version=14.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Syncfusion.Xamarin.SfChart.14.4.0.20\lib\Xamarin.iOS10\Syncfusion.SfChart.XForms.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Syncfusion.SfChart.XForms.iOS, Version=14.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Syncfusion.Xamarin.SfChart.14.4.0.20\lib\Xamarin.iOS10\Syncfusion.SfChart.XForms.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Net.Http" />
