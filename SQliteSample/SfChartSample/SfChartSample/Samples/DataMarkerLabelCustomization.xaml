@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             xmlns:local="clr-namespace:SfChartSample;;assembly=SfChartSample"
+             x:Class="SfChartSample.DataMarkerLabelCustomization"
+             Title="DataMarker Label Customization">
+
+  <chart:SfChart x:Name="sfchart">
+    <chart:SfChart.Title>
+      <chart:ChartTitle Text= "Weather Report"/>
+    </chart:SfChart.Title>
+
+    <chart:SfChart.PrimaryAxis >
+      <chart:CategoryAxis>
+        <chart:CategoryAxis.Title>
+          <chart:ChartAxisTitle Text="Months"/>
+        </chart:CategoryAxis.Title>
+      </chart:CategoryAxis>
+    </chart:SfChart.PrimaryAxis>
+
+    <chart:SfChart.SecondaryAxis>
+      <chart:NumericalAxis Maximum="100">
+        <chart:NumericalAxis.Title>
+          <chart:ChartAxisTitle Text="Temperature in celsius"/>
+        </chart:NumericalAxis.Title>
+      </chart:NumericalAxis>
+    </chart:SfChart.SecondaryAxis>
+
+    <chart:SfChart.Series>
+      <chart:ColumnSeries x:Name="series1" XBindingPath = "Month" YBindingPath = "Temperature">
+        <chart:ColumnSeries.DataMarker>
+          <chart:ChartDataMarker ShowLabel="True" LabelContent="Percentage">
+
+            <chart:ChartDataMarker.LabelStyle>
+              <chart:DataMarkerLabelStyle TextColor="Maroon" BorderColor="Green" BackgroundColor="Aqua" BorderThickness="2" LabelPosition="Auto">
+                <chart:DataMarkerLabelStyle.Font>
+                  <Font FontSize="12" FontAttributes="Bold"/>
+                </chart:DataMarkerLabelStyle.Font>
+              </chart:DataMarkerLabelStyle>
+            </chart:ChartDataMarker.LabelStyle>
+
+          </chart:ChartDataMarker>
+        </chart:ColumnSeries.DataMarker>
+      </chart:ColumnSeries>
+    </chart:SfChart.Series>
+
+  </chart:SfChart>
+</ContentPage>
