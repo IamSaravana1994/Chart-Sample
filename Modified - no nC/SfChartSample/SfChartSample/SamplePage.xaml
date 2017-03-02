@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfChartSample;;assembly=SfChartSample"
+             x:Class="SfChartSample.SamplePage"
+             Title="Sample">
+  <StackLayout>
+    <StackLayout.BindingContext>
+      <local:ListViewModel/>
+    </StackLayout.BindingContext>
+    <ListView x:Name="listView" ItemsSource="{Binding ListData}" >
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <Label TextColor="#503026" Text="{Binding Month}" VerticalTextAlignment="Center" Margin="10"/>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    </StackLayout>
+</ContentPage>
